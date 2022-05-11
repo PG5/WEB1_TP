@@ -200,3 +200,26 @@ label{
     display: flex;
     justify-content: left;
 }
+
+button{
+    font-size: large;
+    font-family: 'Times New Roman', Times, Garamond;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    width: 300px;
+    height: 50px;
+    border: #3B202E solid 3px;
+    margin: 20px;
+    padding-top: 10px;
+    vertical-align: middle;
+    color: #3B202E;
+    background-color: #DFD3C9;
+    text-align: center;
+}
+
+.saludo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
