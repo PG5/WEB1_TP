@@ -124,6 +124,12 @@ h6 {
     font-size: 0.75cm;
 }
 
+.ulfooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
 footer {
     background-color: #233C49;
     color: #DFD3C9;
@@ -132,9 +138,8 @@ footer {
     height: 60px;
     margin: 0px;
     text-align: left;
-    
 }
-/* --------------------------------------formulario --------------------------------------*/
+    /* --------------------------------------formulario --------------------------------------*/
 .formulario {
     display: flex;
     justify-content: center;
