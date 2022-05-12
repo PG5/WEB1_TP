@@ -1,0 +1,243 @@
+body {
+    background-color: #B2A396;
+    margin: 0px;
+    font-size: large;
+    font-family: "times New Roman", Georgia;
+    color: #3B202E;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+}
+
+header{
+    border-bottom: #233C49 solid 10px;
+    }
+
+    h1 {
+    margin: 64px 150px;
+    font-size: 1.5cm;
+    color:#3B202E;
+    text-align: center;
+    background-color: #DFD3C9;
+    border: 6px #604847 groove;
+    text-transform: uppercase;
+   }
+
+
+.botonera {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+}
+a {
+    text-decoration: none;
+    color: #3B202E;
+}
+.l1 {
+    font-size: large;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    width: 33%;
+    height: 30px;
+    border: #3B202E solid 2px;
+    margin: 0px;
+    padding-top: 10px;
+    vertical-align: middle;
+    color: #3B202E;
+    background-color: #DFD3C9;
+}
+.content {
+    margin: 20px;
+}
+
+.home {
+    background-image: url(../images/fondo.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center 0%;
+    margin: 40px 0px 0px 0px;
+    -webkit-text-stroke: 0.6px #DFD3C9;
+    width: 100%;
+    height: 300px;
+}
+.titulo {
+    color: #233C49;
+    background-color: #DFD3C9;
+    text-align: center;
+    text-transform: uppercase;
+    height: 50px;
+    padding-top: 20px;
+    border: 4px #3B202E groove;
+    margin: 50px 100px;
+    }
+.productos {
+    display: flex;
+}
+.producto {
+    margin: 5px;    
+    border: 3px solid #233C49;
+    width: 32%;
+    padding: 6px;
+    background-color: #DFD3C9;
+    display: block;
+    align-items: flex-end;
+    
+}
+.img {
+    text-align: center;
+    }
+img {
+    height: 60%;
+}
+h2 { 
+    font-size: .75cm;
+    color:#233C49;
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: underline;
+    background-color: #B2A396;
+    padding: 10px 0px;
+    height: 50px;
+}
+
+h3 {
+    font-size: 0.5cm;
+    color:#604847;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+h5 {
+    font-size: 1.5cm;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+h6 {
+    font-size: 0.75cm;
+}
+
+footer {
+    background-color: #233C49;
+    color: #DFD3C9;
+    font-size: medium;
+    font-family: "times New Roman", Georgia;
+    height: 60px;
+    margin: 0px;
+    text-align: left;
+    
+}
+/* --------------------------------------formulario --------------------------------------*/
+.formulario {
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+    }
+
+form {
+   color: #3B202E;
+   border: #3B202E solid 3px;
+   width: 450px;
+   height: 600px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+    
+}
+
+input {
+    width: 400px;
+    height: 30px;
+    color: #3B202E;
+    border: #492827 solid 3px;
+    margin: 3px 20px 0px 20px;    
+   
+}
+
+textarea {
+    width: 400px;
+    height: 250px;
+    margin: 3px 20px 0px 20px;    
+}
+
+label {
+    width: 400px;
+    height: 30px;
+    color: #3B202E;
+    margin: 3px 20px 0px 20px;    
+}
+
+.input {
+    display: flex;
+    justify-content: center;
+}
+
+.label {
+    display: flex;
+    justify-content: left;
+}
+
+button {
+    font-size: large;
+    font-family: 'Times New Roman', Times, Garamond;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    width: 300px;
+    height: 50px;
+    border: #3B202E solid 3px;
+    margin: 20px;
+    padding-top: 10px;
+    vertical-align: middle;
+    color: #3B202E;
+    background-color: #DFD3C9;
+    text-align: center;
+}
+
+.saludo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* --------------------------------------tabla --------------------------------------*/
+
+table {
+    text-transform: uppercase;
+    width: 65%;
+	margin: 40px auto;
+	padding: 2px;
+}
+
+thead {
+    background-color: #DFD3C9;
+    color: #492827;
+    content: ;
+    
+}
+
+td {
+    background-color: #492827;
+    color: #B2A396;
+}
+
+table,
+td,
+tr,
+th {
+	border:#604847 solid 2px;
+	border-collapse: collapse;
+	text-align: center;
+    padding: 0px 5px;
+}
+
+ul li {
+	text-align: justify;
+}
