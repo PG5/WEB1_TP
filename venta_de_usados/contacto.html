@@ -30,7 +30,7 @@
                 <label for="nombre">APELLIDO</label>
             </div>
 			<div class="input">
-                <input type="text" placeholder="Escribe tu apellido" name="nombre" id="nombre">
+                <input type="text" placeholder="Escribe tu apellido" name="apellido" id="apellido">
             </div>
 			<div class="label">
                 <label for="email">CORREO ELECTRÓNICO</label>
@@ -44,8 +44,22 @@
             <div class="input">    
                 <textarea name="mensaje" placeholder="Escribinos tu mensaje" id="mensaje"></textarea>
 			</div>
+            <div class="captcha">
+                <div>
+                    <p>Introduzca el siguiente CAPTCHA:</p>
+                </div>
+                <div>
+                    <span id="leeCaptcha"></span>
+                </div>
+                <div>
+                    <input type="text" id="escribeCaptcha" nombre="escribeCaptcha" placeholder="Ingrese Captcha">
+                </div>
+            </div>
 			<div class="input">
-                <input type="submit" value="Enviar" id="btnEnviar">	
+                <input type="submit" id="btnEnviar">	
+            </div>
+            <div>
+                <span id="validacion"></span>
             </div>
 		</form>
     </div>
@@ -55,6 +69,6 @@
             <li>Los artículos son usados.</li>
             <li>Venta directa.</li>
     </footer>
-    <script type="text/javascript" src="js/validacion.js"></script>
+    <script type="text/javascript" src="js/captcha1.js"></script>
 </body>
 </html>

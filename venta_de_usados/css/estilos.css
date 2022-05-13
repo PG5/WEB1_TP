@@ -135,83 +135,67 @@ footer {
     color: #DFD3C9;
     font-size: medium;
     font-family: "times New Roman", Georgia;
+    font-variant: small-caps;
     height: 60px;
     margin: 0px;
     text-align: left;
 }
     /* --------------------------------------formulario --------------------------------------*/
 .formulario {
-    display: flex;
-    justify-content: center;
-    margin: 40px;
+    margin: 2.5em;
     }
 
 form {
-   color: #3B202E;
-   border: #3B202E solid 3px;
-   width: 450px;
-   height: 600px;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-    
+   height: 42em;
+   display: flexbox;    
 }
 
-input {
-    width: 400px;
-    height: 30px;
+input, label, textarea, form {
+    width: 28em;
+}
+
+input, label, textarea {
     color: #3B202E;
-    border: #492827 solid 3px;
-    margin: 3px 20px 0px 20px;    
+    margin: 10px 20px 0px 20px;    
    
 }
 
+input, textarea, form {
+    border: #492827 solid 3px;
+}
+
+input, label {
+    height: 2em;
+}
+
 textarea {
-    width: 400px;
-    height: 250px;
-    margin: 3px 20px 0px 20px;    
+    height: 15.6em;
 }
 
-label {
-    width: 400px;
-    height: 30px;
-    color: #3B202E;
-    margin: 3px 20px 0px 20px;    
-}
-
-.input {
+.input, .label, .formulario {
     display: flex;
+}
+
+.input, .saludo, .formulario, .form {
     justify-content: center;
 }
 
 .label {
-    display: flex;
     justify-content: left;
 }
 
-button {
-    font-size: large;
-    font-family: 'Times New Roman', Times, Garamond;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
-    width: 300px;
-    height: 50px;
-    border: #3B202E solid 3px;
-    margin: 20px;
-    padding-top: 10px;
-    vertical-align: middle;
-    color: #3B202E;
-    background-color: #DFD3C9;
+
+::placeholder {
     text-align: center;
 }
-
 .saludo {
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 
+span {
+    font-weight: bold;
+}
 /* --------------------------------------tabla --------------------------------------*/
 
 table {
