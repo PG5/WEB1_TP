@@ -1,83 +1,133 @@
 body {
     background-color: #B2A396;
-    margin: 0px;
-    font-size: large;
     font-family: "times New Roman", Georgia;
-    color: #3B202E;
-    text-align: center;
-    display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    
+    justify-content: flex-end;    
+}
+
+body,
+.l1 {
+    font-size: large;
+ }
+
+body,
+footer,
+.botonera,
+.l1 {
+    margin: 0;    
+}
+
+body,
+a,
+.l1 {
+    color: #3B202E;
 }
 
 header{
     border-bottom: #233C49 solid 10px;
-    }
+}
 
-    h1 {
+body,
+h1,
+.l1,
+.titulo,
+.img,
+h2,
+h3 {
+    text-align: center;
+}
+
+h1,
+h5,
+.l1 {
+   text-transform: uppercase;
+}
+
+h2,
+h5 { 
+    text-decoration: underline;
+}
+
+h1 {
     margin: 64px 150px;
     font-size: 1.5cm;
-    color:#3B202E;
-    text-align: center;
     background-color: #DFD3C9;
     border: 6px #604847 groove;
-    text-transform: uppercase;
-   }
+}
 
+.botonera,
+.ulfooter {
+    padding: 0;
+}
 
 .botonera {
     width: 100%;
     list-style: none;
     display: flex;
     justify-content: center;
-    margin: 0px;
-    padding: 0px;
 }
+
 a {
     text-decoration: none;
-    color: #3B202E;
 }
+
 .l1 {
-    font-size: large;
     font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
     width: 33%;
     height: 30px;
     border: #3B202E solid 2px;
-    margin: 0px;
     padding-top: 10px;
     vertical-align: middle;
-    color: #3B202E;
     background-color: #DFD3C9;
-}
-.content {
-    margin: 20px;
 }
 
 .home {
     background-image: url(../images/fondo.jpg);
     background-repeat: no-repeat;
+    background-size: auto;
     background-attachment: fixed;
     background-position: center 0%;
-    margin: 40px 0px 0px 0px;
+    margin: 40px 0px 40px 0px;
     -webkit-text-stroke: 0.6px #DFD3C9;
     width: 100%;
-    height: 300px;
+    height: 30em;
 }
-.titulo {
+
+.titulo>a,
+h2 {
     color: #233C49;
+}
+
+.titulo {
     background-color: #DFD3C9;
-    text-align: center;
-    text-transform: uppercase;
     height: 50px;
     padding-top: 20px;
     border: 4px #3B202E groove;
     margin: 50px 100px;
-    }
-.productos {
+}
+
+body,
+.ulfooter,
+.columprod {
     display: flex;
+}
+
+.productos,
+.producto {
+    display: block;
+}
+
+.columprod,
+.ulfooter {
+    flex-direction: row;
+}
+
+.productos {
+    margin-bottom: 20px;
+}
+.producto:hover:not(#firstrow) {
+	transform: scale(1.04);
+	
 }
 .producto {
     margin: 5px;    
@@ -85,22 +135,20 @@ a {
     width: 32%;
     padding: 6px;
     background-color: #DFD3C9;
-    display: block;
-    align-items: flex-end;
-    
+    align-items: flex-end; 
 }
-.img {
-    text-align: center;
-    }
+
 img {
     height: 60%;
 }
+
+h2,
+h3 { 
+    text-transform: capitalize;
+}
+
 h2 { 
     font-size: .75cm;
-    color:#233C49;
-    text-align: center;
-    text-transform: capitalize;
-    text-decoration: underline;
     background-color: #B2A396;
     padding: 10px 0px;
     height: 50px;
@@ -109,24 +157,19 @@ h2 {
 h3 {
     font-size: 0.5cm;
     color:#604847;
-    text-align: center;
-    text-transform: capitalize;
     font-weight: bold;
 }
 
 h5 {
     font-size: 1.5cm;
-    text-transform: uppercase;
-    text-decoration: underline;
 }
 
 h6 {
     font-size: 0.75cm;
+
 }
 
 .ulfooter {
-    display: flex;
-    flex-direction: row;
     justify-content: space-around;
 }
 
@@ -134,37 +177,45 @@ footer {
     background-color: #233C49;
     color: #DFD3C9;
     font-size: medium;
-    font-family: "times New Roman", Georgia;
     font-variant: small-caps;
     height: 60px;
-    margin: 0px;
-    text-align: left;
+    
 }
+
     /* --------------------------------------formulario --------------------------------------*/
+
 .formulario {
-    margin: 2.5em;
+    margin: 0;
+    background-color: #B2A396;
     }
 
 form {
    height: 42em;
-   display: flexbox;    
-}
-
-input, label, textarea, form {
-    width: 28em;
-}
-
-input, label, textarea {
-    color: #3B202E;
-    margin: 10px 20px 0px 20px;    
+   margin: 2.5em;
+   background-color: #604847;
+   color: #DFD3C9;
    
 }
 
-input, textarea, form {
+input,
+label,
+textarea,
+form {
+    width: 28em;
+}
+
+form >div {
+   margin: 10px;
+}
+
+input,
+textarea,
+form {
     border: #492827 solid 3px;
 }
 
-input, label {
+input,
+label {
     height: 2em;
 }
 
@@ -172,11 +223,16 @@ textarea {
     height: 15.6em;
 }
 
-.input, .label, .formulario {
+.input,
+.label,
+.formulario {
     display: flex;
 }
 
-.input, .saludo, .formulario, .form {
+.input,
+.saludo,
+.formulario,
+.form {
     justify-content: center;
 }
 
@@ -188,14 +244,11 @@ textarea {
 ::placeholder {
     text-align: center;
 }
-.saludo {
-    display: flex;
-    flex-direction: column;
-}
 
 span {
     font-weight: bold;
 }
+
 /* --------------------------------------tabla --------------------------------------*/
 
 table {
@@ -227,4 +280,8 @@ th {
 
 ul li {
 	text-align: justify;
+}
+tr:hover:not(#firstrow) {
+	transform: scale(1.06);
+	
 }
